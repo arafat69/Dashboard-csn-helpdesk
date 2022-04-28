@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - CSN helpdesk</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <img src="assets/img/Logo.png">
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto me-lg-3 me-2">
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link"> Admin Name</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa-solid fa-bell"></i> </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+                        <a class="nav-link active" href="todays-ticket.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Total Tickets
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Categories
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Services
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Statuses
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Employes
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Branches
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="dashboard-header bg-white p-2 shadow-sm">
+                    <h3>
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </h3>
+                </div>
+                <div class="container-fluid px-4">
+
+                    <div class="card border-0 rounded-0 mt-4">
+                        <div class="card-body">
+                            <h3 class="title">Today's Tickets</h3>
+
+                            <div class="todays-ticket mt-3">
+                                <div class="heading">
+                                    <div class="item d-flex align-items-center">
+                                        <div>
+                                            <span class="d-block t-color font-12">#000023</span>
+                                            <div class="dropdown">
+                                                <button class="custom-btn dropdown-toggle"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    New
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-name">
+                                            <span class="d-block semibold font-18">GESTIONE CONTRATTO
+                                                DOMESTICO
+                                                <span class="regular t-color font-10">(3 hours
+                                                    ago)</span>
+                                            </span>
+                                            <span class="t-color font-12">Note... !</span>
+                                        </div>
+                                    </div>
+                                    <div class="item text-end pe-2 float-end ">
+                                        <span class="d-block t-color font-12">Mar 28, 2022</span>
+                                        <span class="semibold font-18">File ID #69521</span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item start">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_1.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Assignee</span>
+                                            <span class="semibold font-13">Angela Alemanno</span>
+                                        </div>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_2.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Raised by</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Priority</span>
+                                        <span class="font-13 semibold">Medium</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Category</span>
+                                        <span class="font-13 semibold">CONSULENTE DEL LAVORO</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Start and End time</span>
+                                        <span class="font-13 semibold">12:35 pm - 12:55 pm</span>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="todays-ticket mt-3">
+                                <div class="heading">
+                                    <div class="item d-flex align-items-center">
+                                        <div>
+                                            <span class="d-block t-color font-12">#000023</span>
+                                            <div class="dropdown">
+                                                <button class="custom-btn dropdown-toggle"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    New
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-name">
+                                            <span class="d-block semibold font-18">GESTIONE CONTRATTO
+                                                DOMESTICO
+                                                <span class="regular t-color font-10">(3 hours
+                                                    ago)</span>
+                                            </span>
+                                            <span class="t-color font-12">Note... !</span>
+                                        </div>
+                                    </div>
+                                    <div class="item text-end pe-2 float-end ">
+                                        <span class="d-block t-color font-12">Mar 28, 2022</span>
+                                        <span class="semibold font-18">File ID #69521</span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item start">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_1.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Assignee</span>
+                                            <span class="semibold font-13">Angela Alemanno</span>
+                                        </div>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_2.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Raised by</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Priority</span>
+                                        <span class="font-13 semibold">Medium</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Category</span>
+                                        <span class="font-13 semibold">CONSULENTE DEL LAVORO</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Start and End time</span>
+                                        <span class="font-13 semibold">12:35 pm - 12:55 pm</span>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="todays-ticket mt-3">
+                                <div class="heading">
+                                    <div class="item d-flex align-items-center">
+                                        <div>
+                                            <span class="d-block t-color font-12">#000023</span>
+                                            <div class="dropdown">
+                                                <button class="custom-btn dropdown-toggle"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    New
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-name">
+                                            <span class="d-block semibold font-18">GESTIONE CONTRATTO
+                                                DOMESTICO
+                                                <span class="regular t-color font-10">(3 hours
+                                                    ago)</span>
+                                            </span>
+                                            <span class="t-color font-12">Note... !</span>
+                                        </div>
+                                    </div>
+                                    <div class="item text-end pe-2 float-end ">
+                                        <span class="d-block t-color font-12">Mar 28, 2022</span>
+                                        <span class="semibold font-18">File ID #69521</span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item start">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_1.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Assignee</span>
+                                            <span class="semibold font-13">Angela Alemanno</span>
+                                        </div>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_2.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Raised by</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Priority</span>
+                                        <span class="font-13 semibold">Medium</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Category</span>
+                                        <span class="font-13 semibold">CONSULENTE DEL LAVORO</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Start and End time</span>
+                                        <span class="font-13 semibold">12:35 pm - 12:55 pm</span>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="todays-ticket mt-3">
+                                <div class="heading">
+                                    <div class="item d-flex align-items-center">
+                                        <div>
+                                            <span class="d-block t-color font-12">#000023</span>
+                                            <div class="dropdown">
+                                                <button class="custom-btn dropdown-toggle"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    New
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-name">
+                                            <span class="d-block semibold font-18">GESTIONE CONTRATTO
+                                                DOMESTICO
+                                                <span class="regular t-color font-10">(3 hours
+                                                    ago)</span>
+                                            </span>
+                                            <span class="t-color font-12">Note... !</span>
+                                        </div>
+                                    </div>
+                                    <div class="item text-end pe-2 float-end ">
+                                        <span class="d-block t-color font-12">Mar 28, 2022</span>
+                                        <span class="semibold font-18">File ID #69521</span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item start">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_1.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Assignee</span>
+                                            <span class="semibold font-13">Angela Alemanno</span>
+                                        </div>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_2.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Raised by</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Priority</span>
+                                        <span class="font-13 semibold">Medium</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Category</span>
+                                        <span class="font-13 semibold">CONSULENTE DEL LAVORO</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Start and End time</span>
+                                        <span class="font-13 semibold">12:35 pm - 12:55 pm</span>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="todays-ticket mt-3">
+                                <div class="heading">
+                                    <div class="item d-flex align-items-center">
+                                        <div>
+                                            <span class="d-block t-color font-12">#000023</span>
+                                            <div class="dropdown">
+                                                <button class="custom-btn dropdown-toggle"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    New
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-name">
+                                            <span class="d-block semibold font-18">GESTIONE CONTRATTO
+                                                DOMESTICO
+                                                <span class="regular t-color font-10">(3 hours
+                                                    ago)</span>
+                                            </span>
+                                            <span class="t-color font-12">Note... !</span>
+                                        </div>
+                                    </div>
+                                    <div class="item text-end pe-2 float-end ">
+                                        <span class="d-block t-color font-12">Mar 28, 2022</span>
+                                        <span class="semibold font-18">File ID #69521</span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item start">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_1.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Assignee</span>
+                                            <span class="semibold font-13">Angela Alemanno</span>
+                                        </div>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_2.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Raised by</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Priority</span>
+                                        <span class="font-13 semibold">Medium</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Category</span>
+                                        <span class="font-13 semibold">CONSULENTE DEL LAVORO</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Start and End time</span>
+                                        <span class="font-13 semibold">12:35 pm - 12:55 pm</span>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="todays-ticket mt-3">
+                                <div class="heading">
+                                    <div class="item d-flex align-items-center">
+                                        <div>
+                                            <span class="d-block t-color font-12">#000023</span>
+                                            <div class="dropdown">
+                                                <button class="custom-btn dropdown-toggle"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    New
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-name">
+                                            <span class="d-block semibold font-18">GESTIONE CONTRATTO
+                                                DOMESTICO
+                                                <span class="regular t-color font-10">(3 hours
+                                                    ago)</span>
+                                            </span>
+                                            <span class="t-color font-12">Note... !</span>
+                                        </div>
+                                    </div>
+                                    <div class="item text-end pe-2 float-end ">
+                                        <span class="d-block t-color font-12">Mar 28, 2022</span>
+                                        <span class="semibold font-18">File ID #69521</span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="item start">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_1.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Assignee</span>
+                                            <span class="semibold font-13">Angela Alemanno</span>
+                                        </div>
+                                    </div>
+                                    <div class="item middlecon">
+                                        <div>
+                                            <img class="img" src="assets/img/avatar_2.png">
+                                        </div>
+                                        <div>
+                                            <span class="t-color font-12 d-block">Raised by</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Priority</span>
+                                        <span class="font-13 semibold">Medium</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Category</span>
+                                        <span class="font-13 semibold">CONSULENTE DEL LAVORO</span>
+                                    </div>
+                                    <div class="item largest">
+                                        <span class="t-color d-block font-12">Start and End time</span>
+                                        <span class="font-13 semibold">12:35 pm - 12:55 pm</span>
+                                    </div>
+                                    <div class="item start">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                     <!-- custom-bootstrap pagination -->
+                     <div class="d-flex justify-content-end my-2">
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">..</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    
+
+
+
+
+
+
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+</body>
+
+</html>
