@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - CSN helpdesk</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/percircle.css"> -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-topBar">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <img src="assets/img/Logo.png">
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto me-lg-3 me-2">
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link"> Admin Name</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-bell"></i> </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link active" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+                        <a class="nav-link" href="total-ticket.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Total Tickets
+                        </a>
+                        <a class="nav-link" href="ticket-request.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Ticket Request
+                        </a>
+                        <a class="nav-link active" href="update-news.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Update/News
+                        </a>
+                        <a class="nav-link" href="calendar.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Calendarize
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Statuses
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Employes
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Branches
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="dashboard-header bg-white p-3 shadow-sm d-flex justify-content-between">
+                    <h3>
+                        <i class="fas fa-tachometer-alt"></i>
+                        Update/News
+                    </h3>
+                </div>
+                <div class="container-fluid px-4">
+
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-3 col-xl bash-content pr-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="box-text">Total Tickets</p>
+                                            <p class="box-num color-orange">6583</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Total Tickets.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-4 col-md-3 col-xl bash-content px-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="box-text">Today's Tickets</p>
+                                            <p class="box-num color-pink">98</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Today's Tickets.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-xl bash-content px-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="box-text">Recent messages</p>
+                                            <p class="box-num color-green">12</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Recent messages.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-xl bash-content px-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <!--read Progress bar -->
+                                        <a href="javascript:void(0)" class="read" data-toggle="modal"
+                                            data-target="#readModal">
+                                            <div class="progress mx-auto" data-value='75'>
+                                                <span class="progress-left">
+                                                    <span class="progress-bar border-dark-green"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar border-dark-green"></span>
+                                                </span>
+                                                <div
+                                                    class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <div class="font-weight-bold text-center">
+                                                        <span class="d-block font-10 text-dark">Read</span>
+                                                        <span class="font-14 text-dark-green">75%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="border-right" style="height: 35px;"></div>
+
+                                        <a href="javascript:void(0)" class="unread">
+                                            <div class="progress mx-auto" data-value='25'>
+                                                <span class="progress-left">
+                                                    <span class="progress-bar border-red"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar border-red"></span>
+                                                </span>
+                                                <div
+                                                    class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <div class="font-weight-bold text-center">
+                                                        <span class="d-block font-10 text-dark">Unead</span>
+                                                        <span class="font-14 text-red">25%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- END -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-4 col-md-3 col-xl bash-content pl-2">
+                                <a href="create-update-news.html" class="">
+                                    <div class="cards-box bg-btn text-center py-2">
+                                        <div>
+                                            <span class="font-16 d-block mb-0 p-0"><i class="fa fa-plus"></i></span>
+                                            <span class="font-20 regular">Create New</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- read modal -->
+                    <div class="modal fade" id="readModal">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content rounded-0">
+                                <div class="modal-header rounded-0">
+                                    <h5 class="modal-title">The branches that have read</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body readModalBody">
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                    <div class="read-item">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-16">A2Z Assistenza</span>
+                                            <span class="font-12 gray-500">1 April 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="font-14 gray-500">30172-Venezia (VE)</span>
+                                            <span class="font-10 gray-500">12:12 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                        <div class="row mb-2">
+                            <div class="col-sm-4">
+                                <div class="row p-2">
+                                    <div class="col-6 pr-1">
+                                        <div class="position-relative">
+                                            <input type="text" name="" placeholder="Search by subject"
+                                                class="form-control pr-4">
+                                            <span class="position-absolute search-icon"><i
+                                                    class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-1">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+
+                                <ul class="nav nav-pills ml-2 update_news" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-unread-tab" data-toggle="pill"
+                                            data-target="#pills-unread" type="button" role="tab"
+                                            aria-controls="pills-unread" aria-selected="true">Unread</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-readMessage-tab" data-toggle="pill"
+                                            data-target="#pills-readMessage" type="button" role="tab"
+                                            aria-controls="pills-allMessage" aria-selected="false">Read</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-allMessage-tab" data-toggle="pill"
+                                            data-target="#pills-allMessage" type="button" role="tab"
+                                            aria-controls="pills-allMessage" aria-selected="false">All</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content newsBox" id="pills-tabContent">
+                                    <!-- unread message -->
+                                    <div class="tab-pane fade show active" id="pills-unread" role="tabpanel"
+                                        aria-labelledby="pills-unread-tab">
+
+                                        <div class="newsDetails active shadow-sm">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- read message -->
+                                    <div class="tab-pane fade" id="pills-readMessage" role="tabpanel"
+                                        aria-labelledby="pills-allMessage-tab">
+
+                                        <div class="allMessage">
+                                            <div class="media">
+                                                <div class="avatar">
+                                                    <img src="assets/img/avatar_1.png" alt="">
+                                                    <div class="unreadmsg"></div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span class="font-14 bold">Afrin Sultana</span>
+                                                        <span class="t-color font-10">5 min ago</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span class="font-12 t-color">Have you over been
+                                                            there?</span>
+                                                        <span class="t-color font-10" style="color: #1A7894;"> <i
+                                                                class="fas fa-check-double"></i> </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="allMessage">
+                                            <div class="media">
+                                                <div class="avatar">
+                                                    <img src="assets/img/avatar_1.png" alt="">
+                                                    <!-- <div class="unreadmsg"></div> -->
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span class="font-14 bold">Dipa Dipa</span>
+                                                        <span class="t-color font-10">5 min ago</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span class="font-12 t-color">Have you over been
+                                                            there?</span>
+                                                        <span class="t-color font-10" style="color: #1A7894;"> <i
+                                                                class="fas fa-check-double"></i>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- all message -->
+                                    <div class="tab-pane fade" id="pills-allMessage" role="tabpanel"
+                                        aria-labelledby="pills-allMessage-tab">
+
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                        <div class="newsDetails">
+                                            <a href="#" class="news-desc">
+                                                <div class="d-flex justify-content-between">
+                                                    <h4 class="font-14 m-0 bold pb-1">IMMIGRATION</h4>
+                                                    <span class="font-12 gray">01 April 2022</span>
+                                                </div>
+                                                <p class="font-12 m-0">
+                                                    The service offers complete support in the compilation
+                                                    of documents andrelated to stay in ...
+                                                </p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card card-body border-0 rounded-0 py-1 shadow-sm">
+                                <div class="update-news-details-side px-3">
+                                    <div class="news_title d-flex justify-content-between border-bottom py-2">
+                                        <h4 class="font-20 m-0 bold pb-1">IMMIGRATION</h4>
+                                        <span class="font-14 t-color">01 April 2022 - 12:04 PM</span>
+                                    </div>
+                                    <div class="newsDetailsDescription">
+                                        <p>
+                                            È stato registrato dalla Corte dei Conti in data 27 dicembre 2021 e sarà
+                                            pubblicato sulla Gazzetta Ufficiale del 17 gennaio 2022, il decreto del
+                                            Presidente del Consiglio dei Ministri del 21 dicembre 2021 di programmazione
+                                            dei flussi 2021, con cui sono state fissate le quote dei lavoratori
+                                            stranieri che possono fare ingresso in Italia per lavorare. Il Decreto fissa
+                                            una quota massima di ingressi pari a 69.700 unità, 42.000 delle quali
+                                            riservate agli ingressi per motivi di lavoro stagionale. Al fine di
+                                            prevenire forme d'intermediazione illecita, si è replicata anche quest'anno
+                                            la sperimentazione, riservando - nell'ambito della quota complessiva di
+                                            42.000 unità - 14.000 quote, per il solo settore agricolo, ai lavoratori nei
+                                            cui confronti le domande di nulla-osta siano presentate, in nome e per conto
+                                            dei datori di lavoro, dalle organizzazioni professionali dei datori di
+                                            lavoro indicate nel Decreto (Cia, Coldiretti, Confagricoltura, Copagri,
+                                            Alleanza delle cooperative (Lega cooperative e Confcooperative). Le quote,
+                                            infine, stabilite per gli ingressi per motivi di lavoro non stagionale e
+                                            autonomo sono 27.000 e, tra queste, 20.000 sono riservate agli ingressi per
+                                            lavoro subordinato non stagionale nei settori dell'autotrasporto,
+                                            dell'edilizia e turistico-alberghiero per cittadini dei Paesi che hanno
+                                            sottoscritto o stanno per sottoscrivere accordi di cooperazione in materia
+                                            migratoria con l'Italia. LA DOMANDA L'inoltro da parte di un datore di
+                                            lavoro, italiano o straniero regolarmente residente in Italia, della
+                                            richiesta di nulla osta per l'assunzione di un lavoratore extracomunitario
+                                            rappresenta il momento di avvio dell'intera procedura. A partire dalle 9:00
+                                            del 12 gennaio 2022 sarà disponibile l'applicativo per la precompilazione
+                                            dei moduli di domanda all'indirizzo https://nullaostalavoro.dlci.interno.it,
+                                            che saranno trasmessi, esclusivamente con le consuete modalità telematiche.
+                                            Le domande potranno essere inviate a partire: dalle ore 9:00 del 27 gennaio
+                                            2022 per l'assunzione di lavoratori non stagionali, per i lavoratori
+                                            autonomi e per le conversioni. Rientrano tra queste domande anche quelle per
+                                            i lavoratori non stagionali nel settore dell'autotrasporto, dell'edilizia
+                                            del turismo relative ai cittadini dei Paesi che hanno sottoscritto accordi
+                                            di cooperazione in materia migratoria con l'Italia. Per i cittadini, invece,
+                                            di quei Paesi il cui accordo di cooperazione in materia migratoria non è
+                                            ancora in vigore, le domande potranno essere trasmesse solo a partire dal
+                                            quindicesimo giorno successivo alla pubblicazione dell'accordo di
+                                            cooperazione sulla Gazzetta Ufficiale. dalle ore 9:00 del 1° febbraio 2022
+                                            per l'assunzione di lavoratori stagionali. Come l'anno passato, prerequisito
+                                            necessario per la compilazione e l'inoltro telematico delle domande è il
+                                            possesso di un'identità SPID, come illustrato con Circolare del Ministero
+                                            dell'Interno n. 3738 del 4 dicembre 2018 utilizzando possibilmente, lo
+                                            stesso indirizzo email usato per l'identità SPID, quale nome utente. Durante
+                                            la fase di compilazione e di inoltro delle domande, è fornita assistenza
+                                            agli utenti attraverso un servizio di help desk, che può fornire ragguagli
+                                            tecnici ed è raggiungibile tramite un modulo di richiesta di assistenza
+                                            utilizzando il link "Help Desk", sull'home page dell'applicativo,
+                                            disponibile per tutti gli utenti registrati. Tutte le domande potranno
+                                            essere presentate fino al 17 marzo 2022 e saranno trattate sulla base del
+                                            rispettivo ordine cronologico di presentazione. Vai alla pagina web
+                                            dedicata, dove scaricare la Modulistica online sul sito web del Ministero
+                                            dell'Interno. LE QUOTE DEL DECRETO In base al nuovo decreto sono ammessi in
+                                            Italia 69.700 lavoratori stranieri per motivi di lavoro subordinato
+                                            stagionale e non stagionale e di lavoro autonomo. La quota complessiva è
+                                            così ripartita: 1. INGRESSI PER LAVORO SUBORDINATO NON STAGIONALE E PER
+                                            LAVORO AUTONOMO 27.700 QUOTE, vengono riservate alle assunzioni nei settori
+                                            dell'autotrasporto, dell'edilizia e turistico-alberghiero per cittadini dei
+                                            Paesi che hanno sottoscritto o stanno per sottoscrivere accordi di
+                                            cooperazione in materia migratoria. In particolare dei suddetti 27.700
+                                            ingressi, 17.000 sono riservati ai lavoratori cittadini di Albania, Algeria,
+                                            Bangladesh, Bosnia - Herzegovina, Corea (Repubblica di Corea), Costa
+                                            d'Avorio, Egitto, El Salvador, Etiopia, Filippine, Gambia, Ghana, Giappone,
+                                            Guatemala, India, Kosovo, Mali, Marocco, Mauritius, Moldova, Montenegro,
+                                            Niger, Nigeria, Pakistan, Repubblica di Macedonia del Nord, Senegal, Serbia,
+                                            Sri Lanka, Sudan, Tunisia, Ucraina. La restante quota di 3.000 resta invece
+                                            a disposizione dei cittadini di altri Paesi con i quali, nel corso del 2022
+                                        </p>
+
+                                        <embed src="assets/PDF/sample.pdf" type="application/pdf" width="100%" height="480">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/progressbar.js"></script>
+
+</body>
+
+</html>

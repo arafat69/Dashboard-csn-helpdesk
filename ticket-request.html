@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - CSN helpdesk</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-topBar">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <img src="assets/img/Logo.png">
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto me-lg-3 me-2">
+            <li class="nav-item d-none d-sm-block">
+                <a class="nav-link"> Admin Name</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-bell"></i> </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+
+                        <a class="nav-link" href="total-ticket.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Total Tickets
+                        </a>
+                        <a class="nav-link active" href="ticket-request.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Ticket Request
+                        </a>
+                        <a class="nav-link" href="update-news.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Update/News
+                        </a>
+                        <a class="nav-link" href="calendar.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Calendarize
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Statuses
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Employes
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Branches
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="dashboard-header bg-white p-3 shadow-sm d-flex justify-content-between">
+                    <h3>
+                        <i class="fas fa-tachometer-alt"></i>
+                        Ticket Request
+                    </h3>
+                </div>
+                <div class="container-fluid px-4">
+
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="col-6 col-md-3 bash-content pr-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="t-color m-0 font-14 semibold">Travel Ticket</p>
+                                            <p class="box-num text-dark">658</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Today's Tickets.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 bash-content px-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="t-color m-0 font-14 semibold">Total Issued</p>
+                                            <p class="box-num text-dark">543</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Recent messages.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 bash-content px-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="t-color m-0 font-14 semibold">Total Payments</p>
+                                            <p class="box-num text-dark">$3652</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Unread messages.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3 bash-content pl-2">
+                                <div class="card card-body rounded-0 border-0 p-2">
+                                    <div class="card-box">
+                                        <div>
+                                            <p class="t-color m-0 font-14 semibold">Received Payments</p>
+                                            <p class="box-num text-dark">$3583</p>
+                                        </div>
+                                        <div>
+                                            <img class="box-icon" src="assets/img/Total Update-News.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card card-body border-0 rounded-0 mb-3">
+
+                        <div class="body-head">
+                            <div class="row mb-4">
+                                <div class="col-3 col-md-2">
+                                    <h3 class="title mt-1">Tickets List</h3>
+                                </div>
+                                <div class="col-9 col-md-10">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="serach-item d-flex" style="column-gap:20px ;">
+                                            <div class="subject position-relative">
+                                                <input type="text" name="" placeholder="Search by subject">
+                                                <span class="position-absolute"><i class="fa fa-search"></i></span>
+                                            </div>
+                                            <div class="date">
+                                                <input type="date" name="" value="2022-05-20">
+                                            </div>
+                                        </div>
+                                        <div class="button">
+                                            <button class="btn bg-btn" data-toggle="modal" data-target="#searchTicket">Search Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Modal for not matched-->
+                            <div class="modal fade" id="notMatch">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header rounded-0">
+                                            <h5 class="modal-title">Search Ticket</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label class="font-14 semibold">PNR</label>
+                                                    <input type="text" name="" class="form-control border-danger" value="3454">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="font-14 semibold">Date of Birth</label>
+                                                    <input type="date" name="" class="form-control border-danger" value="2022-03-04">
+                                                </div>
+                                            </div>
+                                            <div class="not-match-content">
+                                                  <i class="fa icon fa-exclamation-triangle"></i>
+                                                  <p class="font-16 semibold">Note matched with PNR & Date of Birth</p>
+                                            </div>
+                                            <button class="btn bg-btn w-100 modalNotMatch" disabled> Assign to me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                             <!-- Modal for search ticket-->
+                             <div class="modal fade" id="searchTicket">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header rounded-0">
+                                            <h5 class="modal-title">Search Ticket</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label class="font-14 semibold m-0">PNR</label>
+                                                    <input type="text" name="" class="form-control border-green" value="3454">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="font-14 semibold m-0">Date of Birth</label>
+                                                    <input type="date" name="" class="form-control border-green" value="2022-03-04">
+                                                </div>
+                                            </div>
+                                            <div class="match-content">
+                                                  <table class="table table-borderless mb-1">
+                                                      <tr>
+                                                          <td>Ticket ID:</td>
+                                                          <td>565876</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td>Name:</td>
+                                                          <td>Palash Howlader</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td>Phone No:</td>
+                                                          <td>+39 0376 843 698</td>
+                                                      </tr>
+                                                  </table>
+                                                  <div class="description">
+                                                      <p class="m-0 font-14 semibold">Ticket Itinerary:</p>
+                                                      <p class="font-14 m-0">
+                                                        Ticket Itinerary message goes here in publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.
+                                                      </p>
+                                                  </div>
+                                            </div>
+                                            <button class="btn bg-btn w-100 text-white"> Assign to me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal for Search Ticket Cancled-->
+                            <div class="modal fade" id="searchTicketCancled">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header rounded-0">
+                                            <h5 class="modal-title">Search Ticket</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label class="font-14 semibold m-0">PNR</label>
+                                                    <input type="text" name="" class="form-control border-green" value="3454">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="font-14 semibold m-0">Date of Birth</label>
+                                                    <input type="date" name="" class="form-control border-green" value="2022-03-04">
+                                                </div>
+                                            </div>
+                                            <div class="match-content">
+                                                  <table class="table table-borderless mb-1">
+                                                      <tr>
+                                                          <td>Ticket ID:</td>
+                                                          <td>565876</td>
+                                                          <td>
+                                                              <button class="btn btn-sm btn-danger">Canceled</button>
+                                                          </td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td>Name:</td>
+                                                          <td>Palash Howlader</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td>Phone No:</td>
+                                                          <td>+39 0376 843 698</td>
+                                                      </tr>
+                                                  </table>
+                                                  <div class="description">
+                                                      <p class="m-0 font-14 semibold">Ticket Itinerary:</p>
+                                                      <p class="font-14 m-0">
+                                                        Ticket Itinerary message goes here in publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.
+                                                      </p>
+                                                  </div>
+                                            </div>
+                                            <button class="btn bg-btn w-100 modalNotMatch" disabled> Assign to me</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="requestTicket-section">
+
+                                <div class="requestTicket shadow-sm">
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket ID</span>
+                                            <span class="font-13 semibold">#000023</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Created date</span>
+                                            <span class="semibold font-13">May 2, 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">PNR</span>
+                                            <span class="font-13 semibold">362514</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Name</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Phone No</span>
+                                            <span class="font-13 semibold">+39 0376 843 698</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <button class="btn btn-sm bg-issue bold" data-toggle="modal" data-target="#notMatch">Issue Ticket</button>
+                                    </div>
+                                    <div class="item category">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket Itinerary</span>
+                                            <input type="text" name="" class="ticketItinerBox"
+                                                placeholder="Ticket Itinerary message goes here">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Branch Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Client Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item d-flex justify-content-between">
+                                        <div class="file-items">
+                                            <span class="btn btn-sm btn-warning text-white" data-toggle="modal" data-target="#searchTicketCancled">Pending</span>
+                                        </div>
+                                        <div class="file-items">
+                                            <span class="position-relative messigeIcon">
+                                                <i class="fas fa-comments"></i>
+                                                <span class="notice position-absolute">9+</span>
+                                            </span>
+                                        </div>
+                                        <div class="file-items">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="requestTicket shadow-sm">
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket ID</span>
+                                            <span class="font-13 semibold">#000023</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Created date</span>
+                                            <span class="semibold font-13">May 2, 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">PNR</span>
+                                            <span class="font-13 semibold">362514</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Name</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Phone No</span>
+                                            <span class="font-13 semibold">+39 0376 843 698</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <button class="btn btn-sm bg-issue bold">Issue Ticket</button>
+                                    </div>
+                                    <div class="item category">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket Itinerary</span>
+                                            <input type="text" name="" class="ticketItinerBox"
+                                                placeholder="Ticket Itinerary message goes here">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Branch Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Client Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item d-flex justify-content-between">
+                                        <div class="file-items">
+                                            <span class="btn btn-sm btn-warning text-white">Pending</span>
+                                        </div>
+                                        <div class="file-items">
+                                            <span class="position-relative messigeIcon">
+                                                <i class="fas fa-comments"></i>
+                                                <span class="notice position-absolute">9+</span>
+                                            </span>
+                                        </div>
+                                        <div class="file-items">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="requestTicket shadow-sm">
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket ID</span>
+                                            <span class="font-13 semibold">#000023</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Created date</span>
+                                            <span class="semibold font-13">May 2, 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">PNR</span>
+                                            <span class="font-13 semibold">362514</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Name</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Phone No</span>
+                                            <span class="font-13 semibold">+39 0376 843 698</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <button class="btn btn-sm bg-issue bold">Issue Ticket</button>
+                                    </div>
+                                    <div class="item category">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket Itinerary</span>
+                                            <input type="text" name="" class="ticketItinerBox"
+                                                placeholder="Ticket Itinerary message goes here">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Branch Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Client Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item d-flex justify-content-between">
+                                        <div class="file-items">
+                                            <span class="btn btn-sm btn-warning text-white">Pending</span>
+                                        </div>
+                                        <div class="file-items">
+                                            <span class="position-relative messigeIcon">
+                                                <i class="fas fa-comments"></i>
+                                                <span class="notice position-absolute">9+</span>
+                                            </span>
+                                        </div>
+                                        <div class="file-items">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="requestTicket shadow-sm ">
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket ID</span>
+                                            <span class="font-13 semibold">#000023</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Created date</span>
+                                            <span class="semibold font-13">May 2, 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">PNR</span>
+                                            <span class="font-13 semibold">362514</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Name</span>
+                                            <span class="semibold font-13">PALASH HOWLADER</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <span class="d-block tickekHead">Phone No</span>
+                                            <span class="font-13 semibold">+39 0376 843 698</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <button class="btn btn-sm bg-issue bold">Issue Ticket</button>
+                                    </div>
+                                    <div class="item category">
+                                        <div>
+                                            <span class="d-block tickekHead">Ticket Itinerary</span>
+                                            <input type="text" name="" class="ticketItinerBox"
+                                                placeholder="Ticket Itinerary message goes here">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Branch Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="">
+                                            <span class="d-block tickekHead">Client Price</span>
+                                            <span class="font-12 semibold">$360</span>
+                                        </div>
+                                    </div>
+                                    <div class="item d-flex justify-content-between">
+                                        <div class="file-items">
+                                            <span class="btn btn-sm btn-warning text-white">Pending</span>
+                                        </div>
+                                        <div class="file-items">
+                                            <span class="position-relative messigeIcon">
+                                                <i class="fas fa-comments"></i>
+                                                <span class="notice position-absolute">9+</span>
+                                            </span>
+                                        </div>
+                                        <div class="file-items">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- custom-bootstrap pagination -->
+                                <div class="d-flex justify-content-between mt-3">
+
+                                    <div>
+                                        <span class="font-14">Tickets per page</span>
+                                        <select name="" id="" class="border-0 px-2 font-14">
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                            <option value="">50</option>
+                                        </select>
+                                    </div>
+
+                                    <nav aria-label="Page navigation example ">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
